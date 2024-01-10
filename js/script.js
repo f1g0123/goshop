@@ -38,3 +38,12 @@ document.addEventListener("click", function (e) {
     shoppingCart.classList.remove("active");
   }
 });
+
+// modal box
+const itemDetailModal = document.querySelector("#item-detail-modal");
+const itemDetailButton = document.querySelector(".item-detail-button");
+
+itemDetailButton.onclick = (e) => {
+  itemDetailModal.style.display = "flex";
+  e.preventDefault();
+};
