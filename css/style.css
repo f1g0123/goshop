@@ -477,12 +477,26 @@ footer .credit a {
 
 .modal-container {
   position: relative;
-  background-color: #fefe;
+  background-color: #fefefe;
   color: var(--bg);
   margin: 15% auto;
   padding: 1.2rem;
   border: 1px solid#666;
   width: 80%;
+  animation: animateModal 0.5s;
+}
+
+/* modal animation */
+@keyframes animateModal {
+  form {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 .modal-container .close-icon {
@@ -502,7 +516,7 @@ footer .credit a {
 }
 .modal-content p {
   font-size: 1.2rem;
-  line-height: 1.7rem;
+  line-height: 1.8rem;
   margin-top: 1.2rem;
 }
 
